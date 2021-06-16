@@ -35,12 +35,22 @@ The full product is still under constructing and the full product is committed t
 
   ![MVP](https://drive.google.com/uc?export=view&id=1Jexsxyet-Sr8iRHcqt58ViTUPC7wfyNa)
 
+- Redux for global state while Hooks for local state
+  - Ref. [React's useReducer Hook vs Redux](https://www.robinwieruch.de/redux-vs-usereducer)
+    > Use useState for basic and simple/small size applications.
+    > Use useState + useReducer + useContext for advanced/medium size applications.
+    > Use useState/useReducer + Redux for complex/large size applications.
+
 ### File Structure
 
 - Models (data-fetching + state management can be replaced by Apollo if needed.)
   - data-fetching
     - DTO → Define any payload as data-transfer-object
     - API Services → actual API service that calling axios in here.
+    - 解決 redux-thunk 的問題：
+      样板代码过多: 与 redux 本身⼀样,通常⼀个请求需要⼤量的代码,⽽且很多都是重复性质的
+      耦合严重: 异步操作与 redux 的 action 偶合在⼀起,不⽅便管理
+      功能孱弱: 有⼀些实际开发中常⽤的功能需要⾃⼰进⾏封装
   - state-management
     - state-models → define reducer state
     - State Reducers → general redux reducer
