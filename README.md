@@ -37,9 +37,9 @@ The full product is still under constructing and the full product is committed t
 
 - Redux for global state while Hooks for local state
   - Ref. [React's useReducer Hook vs Redux](https://www.robinwieruch.de/redux-vs-usereducer)
-    > Use useState for basic and simple/small size applications.
-    > Use useState + useReducer + useContext for advanced/medium size applications.
-    > Use useState/useReducer + Redux for complex/large size applications.
+    > - Use useState for basic and simple/small size applications.
+    > - Use useState + useReducer + useContext for advanced/medium size applications.
+    > - Use useState/useReducer + Redux for complex/large size applications.
 
 ### File Structure
 
